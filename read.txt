@@ -1,0 +1,28 @@
+Create Conda Environment : conda create -p venv python==3.10  (I did this anaconda prompt)
+
+- Select Your Conda Environment in VS Code
+
+  1.In VS Code, press Ctrl + Shift + P (or Cmd + Shift + P on Mac).
+
+  2.Type "Python: Select Interpreter" and hit Enter.
+
+  3.Look for your Conda environment name in the list (it will look like conda env:your_env_name or show the path to the env folder).
+
+  4.Click it.
+
+- Activate It in the VS Code Terminal
+
+  Once you’ve selected the interpreter:
+
+   1.Open a terminal in VS Code (Ctrl + ~)
+
+   2.It should already be using your Conda env (you’ll see (your_env_name) before the prompt).
+
+   3.If not, type: conda activate path_to_your_env
+
+- Install Your Packages
+
+   Inside that activated terminal: pip install -r requirements.txt
+
+For streamlit : python -m streamlit run app.py
+
